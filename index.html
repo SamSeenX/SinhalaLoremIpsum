@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="si">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinhala Lorem Ipsum Generator</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTPVNCFXV4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-ZTPVNCFXV4');
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="dark-mode">
     <div class="container dark-mode">
         <div class="dark-mode-toggle">
@@ -21,11 +31,13 @@
                 </div>
                 <div class="input-group">
                     <label for="sentences-per-paragraph">Sentences per Paragraph:</label>
-                    <input type="range" id="sentences-per-paragraph" value="4" min="1" max="10"><span id="sentences-per-paragraph-value">4</span>
+                    <input type="range" id="sentences-per-paragraph" value="4" min="1" max="10"><span
+                        id="sentences-per-paragraph-value">4</span>
                 </div>
                 <div class="input-group">
                     <label for="sentences-per-paragraph-variation">Sentences per Paragraph Variation:</label>
-                    <input type="range" id="sentences-per-paragraph-variation" value="2" min="0" max="9"><span id="sentences-per-paragraph-variation-value">2</span>
+                    <input type="range" id="sentences-per-paragraph-variation" value="2" min="0" max="9"><span
+                        id="sentences-per-paragraph-variation-value">2</span>
                 </div>
             </div>
             <button id="generate">Generate</button>
@@ -39,4 +51,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
